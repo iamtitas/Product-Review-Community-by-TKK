@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Roboto, sans-serif;
+  height: 50px;
+  background-image: url("assets/images/bk.jpg");
+  background-size: 200%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #000;
+}/*# sourceMappingURL=styles.css.map */

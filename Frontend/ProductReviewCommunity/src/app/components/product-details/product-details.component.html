@@ -1,0 +1,37 @@
+<div class="product-details" *ngIf="product">
+  <div class="product-info">
+    <div class="product-image">
+      <img src="../../../assets/images/phn.png" alt="Phone Image" />
+    </div>
+    <div class="product-detailss">
+      <h2>{{ product.productName }}</h2>
+      <p>Brand: {{ product.brand }}</p>
+      <p>Code: {{ product.productCode }}</p>
+      <p>Price: {{ product.price }}</p>
+    </div>
+  </div>
+  <button
+    class="add-review-button"
+    *ngIf="product"
+    [routerLink]="['/add-review', product.productCode]"
+  >
+    Add Review
+  </button>
+
+  <div class="review-details" *ngIf="reviews.length > 0">
+    <h3>Reviews</h3>
+
+    <div class="review-card">
+      <div class="card" *ngFor="let review of reviews">
+        <div class="card-body">
+          <h5 class="card-title">{{ review.heading }}</h5>
+          <p class="card-text">Rating: {{ review.rating }}</p>
+          <p class="card-text" style="font-style: italic">
+            {{ review.review }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="ft"></div>

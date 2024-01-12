@@ -1,0 +1,13 @@
+<nav>
+  <img src="../../../assets/images/u.png" alt="User Logo" class="user-logo" />
+  <ul>
+    <li *ngIf="isLoggedIn; else loggedOutNav">
+      <span>Welcome, {{ username }}</span>
+      <button id="logot" (click)="logout()">Logout</button>
+    </li>
+    <ng-template #loggedOutNav>
+      <li><button (click)="navigateToLogin()">Login</button></li>
+      <li><button (click)="navigateToRegister()">Register</button></li>
+    </ng-template>
+  </ul>
+</nav>

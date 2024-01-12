@@ -1,0 +1,45 @@
+<div class="landing-page">
+  <h1>PRODUCT REVIEW COMMUNITY</h1>
+  <h1 class="subtxt">Find reviews. Ask for reviews. Share reviews.</h1>
+  <h1 class="subtxt">Connect with users across the world.</h1>
+  <div class="stats">
+    <p>
+      <img
+        src="../../../assets/images/m.png"
+        alt="Members Icon"
+        class="stat-icon"
+      />
+      {{ registeredUsersCount }} Members
+    </p>
+    <p>
+      <img
+        src="../../../assets/images/p.png"
+        alt="Products Icon"
+        class="stat-icon"
+      />
+      {{ productsCount }} Products
+    </p>
+    <p>
+      <img
+        src="../../../assets/images/r.png"
+        alt="Reviews Icon"
+        class="stat-icon"
+      />
+      {{ reviewsCount }} Reviews
+    </p>
+  </div>
+  <div *ngIf="isLoggedIn" class="search-box">
+    <input
+      type="text"
+      [(ngModel)]="searchQuery"
+      placeholder="Enter product name, brand or code"
+    />
+    <img
+      src="../../../assets/images/sr.png"
+      alt="Search Logo"
+      class="search-logo"
+      (click)="search()"
+    />
+    <button [routerLink]="['/ask-review']">Ask for Review</button>
+  </div>
+</div>

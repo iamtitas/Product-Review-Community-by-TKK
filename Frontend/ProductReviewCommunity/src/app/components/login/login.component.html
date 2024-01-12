@@ -1,0 +1,64 @@
+<div class="login-container">
+  <h2>Login</h2>
+  <form (ngSubmit)="login()" #loginForm="ngForm">
+    <div class="form-group">
+      <label for="username">Email:</label>
+      <input
+        type="email"
+        id="username"
+        name="username"
+        [(ngModel)]="username"
+        required
+        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+      />
+      <div
+        *ngIf="
+          loginForm.controls['username']?.errors?.['required']
+        "
+        class="error-message"
+      >
+        Email is required.
+      </div>
+      <div
+        *ngIf="
+          loginForm.controls['username']?.errors?.['pattern']
+        "
+        class="error-message"
+      >
+        Username should be in proper email format.
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        [(ngModel)]="password"
+        required
+        minlength="5"
+      />
+      <div
+        *ngIf="
+           loginForm.controls['password']?.errors?.['required']
+        "
+        class="error-message"
+      >
+        Password is required.
+      </div>
+      <div
+        *ngIf="
+           loginForm.controls['password']?.errors?.['minlength']
+        "
+        class="error-message"
+      >
+        Password should be at least 5 characters.
+      </div>
+    </div>
+    <div *ngIf="loginError" class="error-message">Invalid credentials.</div>
+    <button type="submit">Login</button>
+  </form>
+  <div class="register-link">
+    New here? <a href="/register">Click to register</a>
+  </div>
+</div>

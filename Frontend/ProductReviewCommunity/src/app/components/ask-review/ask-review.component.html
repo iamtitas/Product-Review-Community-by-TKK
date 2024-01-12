@@ -1,0 +1,46 @@
+<form class="my-form" (ngSubmit)="submitRequest()" #reviewForm="ngForm">
+  <h2>Ask for Review</h2>
+  <div>
+    <label for="productName">Product Name:</label>
+    <input
+      type="text"
+      id="productName"
+      name="productName"
+      required
+      [(ngModel)]="reviewRequest.productName"
+    />
+  </div>
+  <div>
+    <label for="productCode">Product Code:</label>
+    <input
+      type="text"
+      id="productCode"
+      name="productCode"
+      required
+      [(ngModel)]="reviewRequest.productCode"
+    />
+  </div>
+  <div>
+    <label for="brand">Brand:</label>
+    <input
+      type="text"
+      id="brand"
+      name="brand"
+      required
+      [(ngModel)]="reviewRequest.brand"
+    />
+  </div>
+
+  <div>
+    <label for="price">Price:</label>
+    <input
+      type="number"
+      id="price"
+      name="price"
+      required
+      [(ngModel)]="reviewRequest.price"
+    />
+  </div>
+
+  <button type="submit" [disabled]="reviewForm.invalid">Submit Request</button>
+</form>

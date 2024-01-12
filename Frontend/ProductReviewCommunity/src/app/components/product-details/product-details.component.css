@@ -1,0 +1,88 @@
+.product-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, #E3E3E3, #cad2db);
+  color: #000;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.product-details .product-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.product-details .product-info .product-image {
+  margin-top: 35px;
+  margin-right: 20px;
+}
+.product-details .product-info .product-image img {
+  width: 120px;
+  height: auto;
+}
+.product-details .product-info .product-detailss h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.product-details .product-info .product-detailss p {
+  margin-bottom: 1px;
+}
+.product-details .review-details {
+  margin-top: 20px;
+  text-align: center;
+}
+.product-details .review-details h3 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.product-details .review-details .review-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.product-details .review-details .card {
+  margin-left: 20px;
+  width: 300px;
+  max-width: 300px;
+  margin-bottom: 20px;
+  background: linear-gradient(150deg, rgba(247, 49, 221, 0.4705882353), rgba(68, 0, 241, 0.3803921569) 100%);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.product-details .review-details .card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.product-details .review-details .card .card-body {
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product-details .review-details .card .card-body h5.card-title {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.product-details .review-details .card .card-body p.card-text {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.product-details .add-review-button {
+  background-color: #181f29;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+.product-details .add-review-button:hover {
+  background-color: #4da6ff;
+}
+
+.ft {
+  height: 50px;
+}/*# sourceMappingURL=product-details.component.css.map */

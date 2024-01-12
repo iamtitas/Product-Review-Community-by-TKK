@@ -1,0 +1,64 @@
+.rev {
+  margin-top: 50px;
+  color: #000;
+  background: linear-gradient(180deg, #E3E3E3, #cad2db);
+  width: 98.5vw;
+  height: 34vw;
+  border: #999999 solid 10px;
+}
+
+.rev h2 {
+  margin-left: 370px;
+  font-weight: bolder;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.rev form div {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.rev form div label {
+  display: block;
+  font-weight: bold;
+  width: 20%;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.rev form div input[type=text],
+.rev form div textarea,
+.rev form div input[type=number] {
+  width: 30%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.rev form div textarea {
+  height: 120px;
+}
+
+.rev form div button[type=submit] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 380px;
+  margin-top: 40px;
+  background-color: #181f29;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+.rev form div button[type=submit]:hover {
+  background-color: #4da6ff;
+}/*# sourceMappingURL=review.component.css.map */

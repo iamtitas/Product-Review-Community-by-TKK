@@ -1,0 +1,59 @@
+.login-container {
+  background: linear-gradient(180deg, #E3E3E3, #cad2db);
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  height: 31.2vw;
+  border: #999999 solid 10px;
+  color: #000000;
+}
+.login-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-container form .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+.login-container form .form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.login-container form .form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #eaeaea;
+  border-radius: 0;
+  outline: none;
+  background-color: #ccc;
+}
+.login-container form .form-group .error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.login-container form button[type=submit] {
+  background-color: #181f29;
+  color: #fff;
+  padding: 8px 16px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+.login-container form button[type=submit]:hover {
+  background-color: #4da6ff;
+}
+
+.register-link {
+  margin-top: 30px;
+  font-size: small;
+}/*# sourceMappingURL=login.component.css.map */

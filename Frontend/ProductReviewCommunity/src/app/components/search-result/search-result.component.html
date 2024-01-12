@@ -1,0 +1,27 @@
+<div class="search-results">
+  <h2 style="margin-top: 70px">Search Results</h2>
+  <div class="card-container" *ngFor="let result of searchResults">
+    <div class="card">
+      <div class="card-image">
+        <img src="../../../assets/images/phn.png" alt="Product Image" />
+      </div>
+      <div class="card-details">
+        <h3 class="card-title">
+          <a [routerLink]="['/product-details', result.productCode]">
+            {{ result.brand }}
+          </a>
+        </h3>
+        <p class="card-subtitle">{{ result.productName }}</p>
+        <p class="card-price">Price: {{ result.price }}</p>
+      </div>
+      <div class="card-ratings">
+        <p class="card-rating">Average Rating: {{ result.averageRating }}</p>
+        <p class="card-reviews">Total Reviews: {{ result.totalReviews }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="no-results" *ngIf="searchResults.length === 0">
+    <p>No results found.</p>
+  </div>
+</div>
+<div class="fs"></div>

@@ -1,0 +1,43 @@
+<div class="rev">
+  <h2>Add Review</h2>
+  <form (ngSubmit)="submitReview()">
+    <div>
+      <label for="heading">Heading:</label>
+      <input
+        type="text"
+        id="heading"
+        name="heading"
+        [(ngModel)]="review.heading"
+        required
+        minlength="4"
+        maxlength="20"
+      />
+    </div>
+    <div>
+      <label for="review">Review:</label>
+      <textarea
+        id="review"
+        name="review"
+        [(ngModel)]="review.reviewText"
+        required
+        minlength="20"
+        maxlength="400"
+      ></textarea>
+    </div>
+    <div>
+      <label for="rating">Rating:</label>
+      <input
+        type="number"
+        id="rating"
+        name="rating"
+        [(ngModel)]="review.rating"
+        required
+        min="1"
+        max="5"
+      />
+    </div>
+    <div>
+      <button type="submit">Submit Review</button>
+    </div>
+  </form>
+</div>
