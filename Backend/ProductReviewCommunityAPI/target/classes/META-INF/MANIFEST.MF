@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Built-By: titaskoley
+Build-Jdk: 17.0.7
+Implementation-Title: PrcBackend
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.nagarro.training
+Implementation-URL: https://spring.io/projects/spring-boot/PrcBackend
+Created-By: Maven Integration for Eclipse
+
